@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ESNext",
     "module": "commonjs",
-    "jsx": "react",
+    "jsx": "react-native",
+    "lib": [
+      "es2019"
+    ],
     "declaration": true,
     "outDir": "./dist",
     "strict": false,
     "moduleResolution": "node",
     "types": [
       "react",
-      "react-native"
+      "react-native",
+      "jest"
     ],
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowJs": true
+  },
+  "exclude": ["node_modules", "__tests__", "./jestSetupFile.js", "./babel.config.js", "__mocks__"]
 }

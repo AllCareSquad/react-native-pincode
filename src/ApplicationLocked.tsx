@@ -1,20 +1,22 @@
-import { colors } from "./design/colors";
-import { grid } from "./design/grid";
-import delay from "./delay";
-import { PinResultStatus } from "./utils";
+import * as React from 'react';
 
-import AsyncStorage from "@react-native-community/async-storage";
-import { easeLinear } from "d3-ease";
-import * as React from "react";
-import Animate from "react-move/Animate";
+import { easeLinear } from 'd3-ease';
+import Animate from 'react-move/Animate';
 import {
+  Platform,
   StyleSheet,
-  View,
-  TouchableOpacity,
   Text,
-  Platform
-} from "react-native";
-import Icon from "react-native-vector-icons/MaterialIcons";
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+import delay from './delay';
+import { colors } from './design/colors';
+import { grid } from './design/grid';
+import { PinResultStatus } from './utils';
 
 export type IProps = {
   buttonComponent?: any

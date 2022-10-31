@@ -1,12 +1,16 @@
 // __tests__/PinCodeTest.js
-import 'react-native'
-import React from 'react'
-import PinCode from '../dist/src/PinCode'
-import PinCodeChoose from '../dist/src/PinCodeChoose'
-import PinCodeEnter from '../dist/src/PinCodeEnter'
-import ApplicatinLocked from '../dist/src/ApplicationLocked'
+import 'react-native';
 
-import renderer from 'react-test-renderer'
+import React from 'react';
+
+import renderer from 'react-test-renderer';
+
+import ApplicatinLocked from '../dist/src/ApplicationLocked';
+import PinCode from '../dist/src/PinCode';
+import PinCodeChoose from '../dist/src/PinCodeChoose';
+import PinCodeEnter from '../dist/src/PinCodeEnter';
+
+jest.useFakeTimers()
 
 it('PinCode renders correctly', () => {
     const tree = renderer.create(

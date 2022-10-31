@@ -1,7 +1,7 @@
-import { PinStatus } from './PinCode';
-import { PinResultStatus } from './utils';
 import * as React from 'react';
 import { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { PinStatus } from './PinCode';
+import { PinResultStatus } from './utils';
 /**
  * Pin Code Enter PIN Page
  */
@@ -96,6 +96,6 @@ declare class PinCodeEnter extends React.PureComponent<IProps, IState> {
     triggerTouchID(): void;
     endProcess: (pinCode?: string) => Promise<void>;
     launchTouchID(): Promise<void>;
-    render(): any;
+    render(): JSX.Element;
 }
 export default PinCodeEnter;

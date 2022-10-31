@@ -1,6 +1,7 @@
-import { Platform } from 'react-native'
-import AsyncStorage from '@react-native-community/async-storage'
-import * as Keychain from 'react-native-keychain'
+import { Platform } from 'react-native';
+import * as Keychain from 'react-native-keychain';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export enum PinResultStatus {
   initial = 'initial',
